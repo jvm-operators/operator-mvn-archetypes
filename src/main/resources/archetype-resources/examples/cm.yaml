@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: my-X
+  name: my-x
   labels:
     ${groupId}/kind: example
 data:

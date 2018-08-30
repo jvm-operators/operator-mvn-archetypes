@@ -43,3 +43,11 @@ and then create the Spark clusters by creating the custom resources (CR).
 ```bash
 kubectl create sparkcluster -f examples/cr.yaml
 ```
+
+# Development
+
+```bash
+make devel
+```
+
+This will build the image and deploys the operator into OpenShift. It assumes the `oc` on `PATH`.

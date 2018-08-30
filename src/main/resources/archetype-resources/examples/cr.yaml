@@ -1,7 +1,7 @@
 apiVersion: ${groupId}/v1
 kind: example
 metadata:
-  name: my-X
+  name: my-x
 spec:
   color: blue
   memory: 128Mi
