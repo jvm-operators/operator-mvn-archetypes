@@ -1,9 +1,23 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>io.radanalytics</groupId>
-  <artifactId>operator-mvn-archetype</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>Archetype - operator-mvn-archetype</name>
-  <url>http://maven.apache.org</url>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <groupId>io.radanalytics</groupId>
+        <artifactId>operator-parent-pom</artifactId>
+        <version>0.3.2</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>io.radanalytics</groupId>
+    <artifactId>operator-mvn-archetype</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>Archetype - operator-mvn-archetype</name>
+
+    <scm>
+        <url>https://github.com/jvm-operators/operator-mvn-archetypes</url>
+        <connection>scm:git:git@github.com:jvm-operators/operator-mvn-archetypes.git</connection>
+        <developerConnection>scm:git:git@github.com:jvm-operators/operator-mvn-archetypes.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
 </project>
