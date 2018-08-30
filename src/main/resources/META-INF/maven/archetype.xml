@@ -1,9 +1,16 @@
 <archetype>
-  <id>operator-mvn-archetype</id>
-  <sources>
-    <source>src/main/java/App.java</source>
-  </sources>
-  <testSources>
-    <source>src/test/java/AppTest.java</source>
-  </testSources>
+    <id>operator-mvn-archetype</id>
+    <sources>
+        <source>src/main/java/operator/ExampleOperator.java</source>
+    </sources>
+    <testSources>
+        <source>src/test/java/operator/AppTest.java</source>
+    </testSources>
+    <resources>
+        <resource>Dockerfile</resource>
+        <resource>src/main/resources/schema/example.js</resource>
+        <resource>src/main/resources/schema/example.js</resource> gitignore
+        readme
+        
+    </resources>
 </archetype>
