@@ -3,7 +3,7 @@
 set -xe
 
 main() {
-  CURRENT=`cat pom.xml | grep "<version>" | sed 's/\s*<[^>]*>\s*//g'`
+  CURRENT=`awk '/modelVersion/,/scm/' pom.xml | grep "<version>" | sed 's/\s*<[^>]*>\s*//g'`
   echo "current version: ${CURRENT}"
   mkdir dir-with-no-pom && cd dir-with-no-pom
 
