@@ -3,7 +3,7 @@
 set -xe
 
 main() {
-  CURRENT=`mvn -U org.apache.maven.plugins:maven-help-plugin:2.1.1:evaluate -Dexpression=project.version|grep -Ev "(^\[|Download\w+:)"`
+  CURRENT=`cat pom.xml | grep "<version>" | sed 's/\s*<[^>]*>\s*//g'`
   echo "current version: ${CURRENT}"
   mvn archetype:generate \
      -DarchetypeArtifactId=operator-mvn-archetype \
