@@ -3,4 +3,4 @@ sudo: true
 jdk:
   - oraclejdk8
 
-script: ./travis/.travis.test.sh
+script: ./.travis/.travis.test.sh
