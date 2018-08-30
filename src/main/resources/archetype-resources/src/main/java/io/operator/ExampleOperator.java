@@ -1,4 +1,4 @@
-package operator;
+package io.operator;
 
 import io.fabric8.kubernetes.api.model.KubernetesResourceList;
 import io.radanalytics.operator.common.AbstractOperator;

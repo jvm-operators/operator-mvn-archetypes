@@ -1,15 +1,15 @@
-IMAGE?=${groupId.replace("\.","")}/${artifactId}
+IMAGE?=${groupId}/${artifactId}
 
 .PHONY: build
 build: package image-build
 
 .PHONY: package
 package:
-	MAVEN_OPTS="-Djansi.passthrough=true -Dplexus.logger.type=ansi $(MAVEN_OPTS)" ./mvnw clean package -DskipTests
+	MAVEN_OPTS="-Djansi.passthrough=true -Dplexus.logger.type=ansi $(MAVEN_OPTS)" sh ./mvnw clean package -DskipTests
 
 .PHONY: test
 test:
-	MAVEN_OPTS="-Djansi.passthrough=true -Dplexus.logger.type=ansi $(MAVEN_OPTS)" ./mvnw clean test
+	MAVEN_OPTS="-Djansi.passthrough=true -Dplexus.logger.type=ansi $(MAVEN_OPTS)" sh ./mvnw clean test
 
 .PHONY: image-build
 image-build:

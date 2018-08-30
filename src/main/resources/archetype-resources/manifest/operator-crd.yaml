@@ -37,7 +37,7 @@ spec:
       serviceAccountName: ${artifactId}
       containers:
       - name: ${artifactId}
-        image: ${groupId.replace("\.","")}/${artifactId}:latest
+        image: ${groupId}/${artifactId}:latest
         env:
         - name: CRD
           value: "true"
