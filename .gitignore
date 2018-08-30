@@ -125,7 +125,3 @@ openshift.local.clusterup
 
 
 abstract-operator
-
-# spark shell
-metastore_db/
-derby.log

@@ -16,10 +16,5 @@
         <resource>README.md</resource>
         <resource>.gitignore</resource>
         <resource>.gitmodules</resource>
-        <resource>mvnw</resource>
-        <resource>mvnw.cmd</resource>
-        <resource>.mvn/wrapper/maven-wrapper.jar</resource>
-        <resource>.mvn/wrapper/maven-wrapper.properties</resource>
-        <resource>.mvn/wrapper/MavenWrapperDownloader.java</resource>
     </resources>
 </archetype>
