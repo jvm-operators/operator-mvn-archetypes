@@ -7,6 +7,12 @@
 
 This operator uses [abstract-operator](https://github.com/jvm-operators/abstract-operator) library.
 
+# Build
+
+```bash
+make build
+```
+
 # Quick Start
 
 Run the `${artifactId}` deployment:

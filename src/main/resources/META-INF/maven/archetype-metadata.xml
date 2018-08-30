@@ -38,6 +38,7 @@
                 <include>README.md</include>
                 <include>.gitignore</include>
                 <include>.gitmodules</include>
+                <include>Makefile</include>
                 <include>src/main/java/operator/ExampleOperator.java</include>
             </includes>
         </fileSet>
