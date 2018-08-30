@@ -9,8 +9,17 @@
     <resources>
         <resource>Dockerfile</resource>
         <resource>src/main/resources/schema/example.js</resource>
-        <resource>src/main/resources/schema/example.js</resource> gitignore
-        readme
-        
+        <resource>manifest/operator.yaml</resource>
+        <resource>manifest/operator-crd.yaml</resource>
+        <resource>examples/cr.yaml</resource>
+        <resource>examples/cm.yaml</resource>
+        <resource>README.md</resource>
+        <resource>.gitignore</resource>
+        <resource>.gitmodules</resource>
+        <resource>mvnw</resource>
+        <resource>mvnw.cmd</resource>
+        <resource>.mvn/wrapper/maven-wrapper.jar</resource>
+        <resource>.mvn/wrapper/maven-wrapper.properties</resource>
+        <resource>.mvn/wrapper/MavenWrapperDownloader.java</resource>
     </resources>
 </archetype>
