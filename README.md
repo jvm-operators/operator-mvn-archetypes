@@ -1,4 +1,4 @@
-[![Build status](https://travis-ci.org/jvm-operators/operator-mvn-archetype.svg?branch=master)](https://travis-ci.org/jvm-operators/operator-mvn-archetype)
+[![Build status](https://travis-ci.org/jvm-operators/operator-mvn-archetypes.svg?branch=master)](https://travis-ci.org/jvm-operators/operator-mvn-archetypes)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 
 Maven archetype that can speed up the development of other Java operators for Kubernetes and OpenShift.
