@@ -24,7 +24,7 @@ releaseSnapshot() {
 }
 
 release() {
-    openssl aes-256-cbc -K ${encrypted_ea794cf5410d_key} -iv ${encrypted_ea794cf5410d_iv} -in ./.travis/.signing.asc.enc -out ./signing.asc -d
+    openssl aes-256-cbc -K ${encrypted_22ae2bcc5948_key} -iv ${encrypted_22ae2bcc5948_iv} -in ./.travis/.signing.asc.enc -out ./signing.asc -d
     gpg --fast-import ./signing.asc &> /dev/null
     mvn -s ./.travis/settings.xml clean deploy -DskipLocalStaging=true -P release
     sleep 10
