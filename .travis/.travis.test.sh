@@ -18,6 +18,7 @@ main() {
   # try if it compiles
   make build
 
+  echo -e "\e[92m\n\n\n\n----------------\n    SUCCESS\n----------------\n\n\n\n\e[0m"
   cd ../..
   mkdir dir-with-no-pom2 && cd dir-with-no-pom2
   mvn archetype:generate \
@@ -29,6 +30,8 @@ main() {
   cd x-operator/
 
   make build
+
+  echo -e "\e[92m\n\n\n\n----------------\n    SUCCESS\n----------------\n\n\n\n\e[0m"
 }
 
 main
