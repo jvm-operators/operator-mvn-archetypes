@@ -24,7 +24,7 @@ gitFu() {
   old=$1
   new=$2
   mvn -U versions:set -DnewVersion=$new
-  git add pom.xml
+  git add *pom.xml
   set -x
   git commit -m "$3 version bump from $old to $new"
   set +x
