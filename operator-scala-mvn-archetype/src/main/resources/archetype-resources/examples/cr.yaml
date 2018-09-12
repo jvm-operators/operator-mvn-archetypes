@@ -1,0 +1,6 @@
+apiVersion: radanalytics.io/v1
+kind: foo
+metadata:
+  name: my-x
+spec:
+  someParameter: 42

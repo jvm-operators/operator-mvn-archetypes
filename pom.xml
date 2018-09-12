@@ -5,14 +5,15 @@
 
     <parent>
         <groupId>io.radanalytics</groupId>
-        <artifactId>operator-mvn-archetypes-parent</artifactId>
-        <version>0.0.2-SNAPSHOT</version>
+        <artifactId>operator-parent-pom</artifactId>
+        <version>0.3.7</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.radanalytics</groupId>
-    <artifactId>operator-mvn-archetype</artifactId>
+    <artifactId>operator-mvn-archetypes-parent</artifactId>
     <version>0.0.2-SNAPSHOT</version>
-    <name>Archetype (Java) - operator-mvn-archetype</name>
+    <name>Archetypes - parent pom.xml</name>
+    <packaging>pom</packaging>
 
     <scm>
         <url>https://github.com/jvm-operators/operator-mvn-archetypes</url>
@@ -20,4 +21,9 @@
         <developerConnection>scm:git:git@github.com:jvm-operators/operator-mvn-archetypes.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
+
+    <modules>
+        <module>operator-mvn-archetype</module>
+        <module>operator-scala-mvn-archetype</module>
+    </modules>
 </project>

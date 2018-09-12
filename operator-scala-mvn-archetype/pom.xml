@@ -10,9 +10,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.radanalytics</groupId>
-    <artifactId>operator-mvn-archetype</artifactId>
+    <artifactId>operator-scala-mvn-archetype</artifactId>
     <version>0.0.2-SNAPSHOT</version>
-    <name>Archetype (Java) - operator-mvn-archetype</name>
+    <name>Archetype (Scala) - operator-scala-mvn-archetype</name>
 
     <scm>
         <url>https://github.com/jvm-operators/operator-mvn-archetypes</url>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor name="operator-scala-mvn-archetype">
+    <requiredProperties>
+        <requiredProperty key="groupId">
+            <defaultValue>io.radanalytics</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="artifactId">
+            <defaultValue>x-operator</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="version">
+            <defaultValue>0.0.1-SNAPSHOT</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
+
+    <fileSets>
+        <fileSet encoding="UTF-8">
+            <directory>project</directory>
+            <include>**/*.*</include>
+        </fileSet>
+
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory></directory>
+            <includes>
+                <include>Dockerfile</include>
+                <include>manifest/operator.yaml</include>
+                <include>manifest/operator-crd.yaml</include>
+                <include>examples/cr.yaml</include>
+                <include>examples/cm.yaml</include>
+                <include>README.md</include>
+                <include>.gitignore</include>
+                <include>.gitmodules</include>
+                <include>Makefile</include>
+                <include>build.sbt</include>
+                <include>src/main/scala/io/operator/foo/FooOperator.scala</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+</archetype-descriptor>
