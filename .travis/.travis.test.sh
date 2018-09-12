@@ -18,7 +18,7 @@ main() {
   # try if it compiles
   make build
 
-  echo -e "\e[92m\n\n\n\n----------------\n    SUCCESS\n----------------\n\n\n\n\e[0m"
+  echo -e "$(tput setaf 2)\n\n\n\n----------------\n    SUCCESS\n----------------\n\n\n\n$(tput sgr0)"
   cd ../..
   mkdir dir-with-no-pom2 && cd dir-with-no-pom2
   mvn archetype:generate \
@@ -31,7 +31,7 @@ main() {
 
   make build
 
-  echo -e "\e[92m\n\n\n\n----------------\n    SUCCESS\n----------------\n\n\n\n\e[0m"
+  echo -e "$(tput setaf 2)\n\n\n\n----------------\n    SUCCESS\n----------------\n\n\n\n$(tput sgr0)"
 }
 
 main
