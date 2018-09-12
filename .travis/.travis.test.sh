@@ -5,7 +5,7 @@ set -xe
 main() {
   CURRENT=`awk '/modelVersion/,/scm/' pom.xml | grep "<version>" | sed 's/\s*<[^>]*>\s*//g'`
   echo "current version: ${CURRENT}"
-  mkdir dir-with-no-pom && cd dir-with-no-pom
+  mkdir dir-with-no-pom1 && cd dir-with-no-pom1
 
   # finally generate the project
   mvn archetype:generate \
@@ -16,7 +16,19 @@ main() {
   cd x-operator/
 
   # try if it compiles
-  mvn install
+  make build
+
+  cd ../..
+  mkdir dir-with-no-pom2 && cd dir-with-no-pom2
+  mvn archetype:generate \
+     -DarchetypeArtifactId=operator-scala-mvn-archetype \
+     -DarchetypeGroupId=io.radanalytics \
+     -DarchetypeVersion=${CURRENT} \
+     -DinteractiveMode=false
+
+  cd x-operator/
+
+  make build
 }
 
 main
