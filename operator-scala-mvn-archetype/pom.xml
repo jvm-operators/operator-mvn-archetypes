@@ -6,12 +6,12 @@
     <parent>
         <groupId>io.radanalytics</groupId>
         <artifactId>operator-mvn-archetypes-parent</artifactId>
-        <version>0.0.3</version>
+        <version>0.0.4-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.radanalytics</groupId>
     <artifactId>operator-scala-mvn-archetype</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4-SNAPSHOT</version>
     <name>Archetype (Scala) - operator-scala-mvn-archetype</name>
 
     <scm>
