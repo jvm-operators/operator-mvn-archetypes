@@ -27,7 +27,7 @@ release() {
     openssl aes-256-cbc -K ${encrypted_22ae2bcc5948_key} -iv ${encrypted_22ae2bcc5948_iv} -in ./.travis/.signing.asc.enc -out ./signing.asc -d
     gpg --fast-import ./signing.asc &> /dev/null
     #mvn -s ./.travis/settings.xml clean install deploy -DskipLocalStaging=true -P release
-    mvn -B release:perform -DconnectionUrl=scm:git:git@github.com:jvm-operators/operator-mvn-archetypes.git
+    mvn -B release:perform
     sleep 10
     local _repo_ids=`mvn -s ./.travis/settings.xml nexus-staging:rc-list | grep "ioradanalytics".*OPEN | cut -d' ' -f2 | tail -4`
     set +e
