@@ -125,3 +125,7 @@ openshift.local.clusterup
 
 
 abstract-operator
+
+# Maven release
+*.releaseBackup
+release.properties
