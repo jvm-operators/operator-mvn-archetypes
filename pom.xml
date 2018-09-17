@@ -1,4 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
         <groupId>io.radanalytics</groupId>
@@ -8,7 +8,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.radanalytics</groupId>
     <artifactId>operator-mvn-archetypes-parent</artifactId>
-    <version>0.0.4</version>
+    <version>0.0.5-SNAPSHOT</version>
     <name>Archetypes - parent pom.xml</name>
     <packaging>pom</packaging>
 
@@ -16,7 +16,7 @@
         <url>https://github.com/jvm-operators/operator-mvn-archetypes</url>
         <connection>scm:git:git@github.com:jvm-operators/operator-mvn-archetypes.git</connection>
         <developerConnection>scm:git:git@github.com:jvm-operators/operator-mvn-archetypes.git</developerConnection>
-        <tag>0.0.4</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <modules>
