@@ -13,7 +13,7 @@ mvn archetype:generate \
     -DartifactId=my-new-operator \
     -DarchetypeArtifactId=operator-mvn-archetype \
     -DarchetypeGroupId=io.radanalytics \
-    -DarchetypeVersion=0.0.4
+    -DarchetypeVersion=0.0.8
 ```
 
 * Scala operator
@@ -24,7 +24,7 @@ mvn archetype:generate \
     -DartifactId=my-new-scala-operator \
     -DarchetypeArtifactId=operator-scala-mvn-archetype \
     -DarchetypeGroupId=io.radanalytics \
-    -DarchetypeVersion=0.0.4
+    -DarchetypeVersion=0.0.8
 ```
 
 By issuing the command above, you should be able to see new directory called `my-new-operator` (or `my-new-scala-operator`) with example operator, example Dockerfile, Makefile, etc.
